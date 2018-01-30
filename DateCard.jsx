@@ -6,15 +6,8 @@ import RoomEntry from './RoomEntry.jsx';
 const DateCard = styled.div`
     margin: 20px 1em 0;
     display: inline-block;
-    width: 300px;
-
-    &:first-child {
-        margin-left: 0;
-    }
-
-    &:last-child {
-        margin-right: 0;
-    }
+    vertical-align: top;
+    width: 360px;
 `;
 
 const Date = styled.h3`
