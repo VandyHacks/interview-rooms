@@ -36,3 +36,7 @@ body {
     background: #2b2f40;
     color: #fff;
 }
+
+#app {
+    font-family: 'Sofia Pro', sans-serif;
+}
