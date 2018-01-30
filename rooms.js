@@ -5,7 +5,7 @@ export default [
             {
                 start: '3:30 PM',
                 end: '8:45 PM',
-                room: 'TBD - Check your email'
+                room: 'TBD'
             }
         ]
     },

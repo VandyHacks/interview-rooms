@@ -7,8 +7,8 @@ import roomData from './rooms.js';
 import DateCard from './DateCard.jsx';
 
 const Schedule = styled.div`
-    padding: 20px;
-    font-family: Sofia Pro;
+    padding: 0.5em;
+    font-family: 'Sofia Pro', sans-serif;
 `;
 
 render(

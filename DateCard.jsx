@@ -4,16 +4,16 @@ import styled from 'styled-components';
 import RoomEntry from './RoomEntry.jsx';
 
 const DateCard = styled.div`
-    margin: 20px 1em 0;
+    margin: .5em;
     display: inline-block;
     vertical-align: top;
-    width: 360px;
+    width: 320px;
 `;
 
 const Date = styled.h3`
     text-decoration: underline;
     text-align: center;
-    font-weight: 400;
+    font-weight: normal;
     margin-bottom: 1.25em;
 `;
 
