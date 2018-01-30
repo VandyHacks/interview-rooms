@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import styled from 'styled-components';
 
 import './app.css';
-import roomData from './rooms.json';
+import roomData from './rooms.js';
 import DateCard from './DateCard.jsx';
 
 const Schedule = styled.div`

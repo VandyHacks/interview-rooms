@@ -1,4 +1,4 @@
-[
+export default [
     {
         "date": "1/30/2018",
         "rooms": [
