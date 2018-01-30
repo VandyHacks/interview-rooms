@@ -8,7 +8,6 @@ import DateCard from './DateCard.jsx';
 
 const Schedule = styled.div`
     padding: 0.5em;
-    font-family: 'Sofia Pro', sans-serif;
 `;
 
 render(
