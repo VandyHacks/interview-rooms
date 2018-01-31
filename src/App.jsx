@@ -13,11 +13,12 @@ const Schedule = styled.div`
     max-width: 1200px;
     margin: auto;
 `;
+const parseDate = date => fecha.parse(date, 'MM/DD/YYYY');
 
 const App = ({ roomData, today }) => (
     <Schedule>
         {roomData
-            .filter(({ date }) => fecha.parse(date, 'MM/DD/YYYY') >= today)
+            .filter(({ date }) => parseDate(date) >= today)
             .map((entry, i) => <DateCard key={i} {...entry} />)}
     </Schedule>
 );
