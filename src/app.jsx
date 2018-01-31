@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import styled from 'styled-components';
 import fecha from 'fecha';
 
-import './app.css';
+import '../app.css';
 import roomData from './rooms.js';
 import DateCard from './DateCard.jsx';
 
