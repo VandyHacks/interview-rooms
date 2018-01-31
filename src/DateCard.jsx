@@ -4,10 +4,22 @@ import styled from 'styled-components';
 import RoomEntry from './RoomEntry.jsx';
 
 const DateCard = styled.div`
-    margin: .5em;
+    padding: 0.5em;
     display: inline-block;
     vertical-align: top;
-    width: 320px;
+    width: 100%;
+
+    @media screen and (min-width: 540px) {
+        width: 50%;
+    }
+
+    @media screen and (min-width: 840px) {
+        width: 33.33%;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 25%;
+    }
 `;
 
 const Date = styled.h3`
