@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { render } from 'react-dom';
 import styled from 'styled-components';
 import fecha from 'fecha';
@@ -11,14 +11,31 @@ const Schedule = styled.div`
     padding: 0.5em;
 `;
 
-const today = new Date();
-today.setHours(0, 0, 0, 0);
+const getToday = () => {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    return { today };
+};
 
-render(
-    <Schedule>
-        {roomData
-            .filter(({ date }) => fecha.parse(date, 'MM/DD/YYYY') >= today)
-            .map((entry, i) => <DateCard key={i} {...entry} />)}
-    </Schedule>,
-    document.getElementById('app')
-);
+class App extends Component {
+    state = getToday();
+
+    componentDidMount() {
+        setInterval(() => this.setState(getToday()), 1000);
+    }
+
+    render() {
+        const { today } = this.state;
+        return (
+            <Schedule>
+                {roomData
+                    .filter(
+                        ({ date }) => fecha.parse(date, 'MM/DD/YYYY') >= today
+                    )
+                    .map((entry, i) => <DateCard key={i} {...entry} />)}
+            </Schedule>
+        );
+    }
+}
+
+render(<App />, document.getElementById('app'));
