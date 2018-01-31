@@ -1,13 +1,17 @@
 import createStore from 'redux-zero';
 
+const getToday = () => {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    return { today };
+};
+
 const actions = store => ({
-    refreshDate: state => {
-        const today = new Date();
-        today.setHours(0, 0, 0, 0);
-        return { today };
-    }
+    refreshDate: () => store.setState(getToday())
 });
 
-const store = createStore(refreshDate({}));
+const store = createStore(getToday());
 
-export { actions, store };
+const mapToProps = ({ today }) => ({ today });
+
+export { actions, store, mapToProps };
