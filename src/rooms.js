@@ -35,7 +35,7 @@ export default [
             {
                 start: '4:00 PM',
                 end: '8:00 PM',
-                room: 'FGH 200'
+                room: 'FGH 300'
             }
         ]
     },
