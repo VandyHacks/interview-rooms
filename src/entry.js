@@ -8,10 +8,10 @@ const getToday = () => {
 };
 const render = renderToNode(document.getElementById('app'));
 
-let appState = { roomData, ...getToday() };
+let state = { roomData, ...getToday() };
 
-render(appState);
+render(state);
 setInterval(() => {
-    appState = { ...appState, ...getToday() };
-    render(appState);
+    state = { ...state, ...getToday() };
+    render(state);
 }, 1000);

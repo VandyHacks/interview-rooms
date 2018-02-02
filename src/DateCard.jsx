@@ -5,6 +5,7 @@ import RoomEntry from './RoomEntry.jsx';
 
 const DateCard = styled.div`
     padding: 0.5em;
+    margin: 0.5em 0;
     display: inline-block;
     vertical-align: top;
     width: 100%;
@@ -26,7 +27,7 @@ const Date = styled.h3`
     text-decoration: underline;
     text-align: center;
     font-weight: normal;
-    margin-bottom: 1.25em;
+    margin: 0 0 1.25em;
 `;
 
 export default ({ date, rooms }) => (
