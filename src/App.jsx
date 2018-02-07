@@ -12,6 +12,10 @@ const Schedule = styled.div`
     flex-wrap: wrap;
     max-width: 1200px;
     margin: auto;
+
+    @media screen and (min-width: 540px) {
+        padding: 1.5em;
+    }
 `;
 const parseDate = date => fecha.parse(date, 'MM/DD/YYYY');
 
