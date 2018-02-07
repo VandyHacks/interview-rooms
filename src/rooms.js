@@ -148,5 +148,35 @@ export default [
                 room: 'FGH 300'
             }
         ]
+    },
+    {
+        date: '02/14/2018',
+        rooms: [
+            {
+                start: '4:30 PM',
+                end: '10:30 PM',
+                room: 'FGH 313'
+            }
+        ]
+    },
+    {
+        date: '02/15/2018',
+        rooms: [
+            {
+                start: '4:00 PM',
+                end: '10:00 PM',
+                room: 'FGH 200'
+            }
+        ]
+    },
+    {
+        date: '02/16/2018',
+        rooms: [
+            {
+                start: '4:00 PM',
+                end: '10:00 PM',
+                room: 'FGH 200'
+            }
+        ]
     }
 ];
