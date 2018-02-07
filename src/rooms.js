@@ -86,7 +86,12 @@ export default [
                 start: '4:00 PM',
                 end: '6:00 PM',
                 room: 'FGH 134'
-            }
+            },
+            {
+                start: '6:00 PM',
+                end: '10:00 PM',
+                room: 'FGH 200'
+            },
         ]
     },
     {
