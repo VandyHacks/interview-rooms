@@ -10,7 +10,7 @@ const DateCard = styled.div`
     vertical-align: top;
     width: 100%;
 
-    @media screen and (min-width: 540px) {
+    @media screen and (min-width: 576px) {
         width: 50%;
     }
 

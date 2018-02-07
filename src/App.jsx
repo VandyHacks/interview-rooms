@@ -13,7 +13,7 @@ const Schedule = styled.div`
     max-width: 1200px;
     margin: auto;
 
-    @media screen and (min-width: 540px) {
+    @media screen and (min-width: 576px) {
         padding: 1.5em;
     }
 `;
