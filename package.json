@@ -2,6 +2,7 @@
   "name": "vh-interview-rooms",
   "version": "0.0.1",
   "dependencies": {
+    "babel-plugin-styled-components": "^1.5.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
