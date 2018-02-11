@@ -120,7 +120,7 @@ export default [
             {
                 start: '2:00 PM',
                 end: '10:00 PM',
-                room: 'FGH 300'
+                room: 'FGH 110'
             }
         ]
     },
