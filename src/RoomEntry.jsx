@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from 'react-emotion';
 
 const RoomEntry = styled.div`
     padding: 0.75em;
