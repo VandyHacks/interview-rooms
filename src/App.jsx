@@ -1,6 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import styled from 'react-emotion';
+import { h, render } from 'preact';
+import styled from 'preact-emotion';
 import fecha from 'fecha';
 
 import '../app.css';
@@ -27,4 +26,5 @@ const App = ({ roomData, today }) => (
     </Schedule>
 );
 
-export default node => props => ReactDOM.render(<App {...props} />, node);
+export default node => props =>
+    render(<App {...props} />, node, node.lastChild);

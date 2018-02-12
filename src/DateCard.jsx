@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'react-emotion';
+import { h } from 'preact';
+import styled from 'preact-emotion';
 
 import RoomEntry from './RoomEntry.jsx';
 
