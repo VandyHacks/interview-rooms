@@ -16,15 +16,24 @@ const Schedule = styled.div`
         padding: 1.5em;
     }
 `;
+const StatusMessage = styled.div`
+    text-align: center;
+    padding: 1.5em;
+`;
 const parseDate = date => fecha.parse(date, 'MM/DD/YYYY');
 
-const App = ({ roomData, today }) => (
-    <Schedule>
-        {roomData
-            .filter(({ date }) => parseDate(date) >= today)
-            .map((entry, i) => <DateCard key={i} {...entry} />)}
-    </Schedule>
-);
+const App = ({ roomData, today }) => {
+    const rooms = roomData.filter(({ date }) => parseDate(date) >= today);
+    return rooms.length > 0 ? (
+        <Schedule>
+            {rooms.map((entry, i) => <DateCard key={i} {...entry} />)}
+        </Schedule>
+    ) : (
+        <StatusMessage>
+            There are currently no interviews scheduled.
+        </StatusMessage>
+    );
+};
 
 export default node => props =>
     render(<App {...props} />, node, node.lastChild);
